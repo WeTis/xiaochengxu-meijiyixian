@@ -1,0 +1,28 @@
+<import src='../../tpls/product-list' />
+<view>
+  <swiper class='swiper' indicator-dots='true' autoplay='true'>
+    <block wx:for="{{bannerArr}}">
+      <swiper-item class='item-banner' bindtap='onProductDetailTap' data-id="{{item.key_word}}">
+        <image class='item-banner-img' src="{{item.img.url}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <view class='themes'>
+    <block wx:for="{{themeArr}}">
+      <view class='single-theme  big' bindtap='onThemeTap' wx:if="{{index >= 2 }}" data-id="{{item.id}}">
+        <image src="{{item.topic_img.url}}"></image>
+      </view>
+      <view class='single-theme' bindtap='onThemeTap' wx:else data-id="{{item.id}}">
+        <image src="{{item.topic_img.url}}"></image>
+      </view>
+    </block>
+  </view>
+
+  <view class="products">
+    <view class='product-title'>最近新品</view>
+    <view>
+      <template is='product-list' data="{{products:productArr}}" />
+    </view>
+  </view>
+</view>

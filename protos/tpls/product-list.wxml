@@ -1,0 +1,36 @@
+<template name='product-list'>
+  <view class='products-list'>
+    <block wx:for="{{products}}">
+       <!-- <view class='product-item' data-id="{{item.id}}" bindtap='onProductDetailTap'>
+          <image class='product-item-img' src="{{item.main_img_url}}"></image>
+          <view class='product-item-name'>{{item.name}}</view>
+          <view class='product-item-price'>￥{{item.price}}</view>
+       </view> -->
+
+       <view class='shopList'  data-id="{{item.id}}" wx:if="{{item.id != 11}}" bindtap='onProductDetailTap'>
+        <view class='img'>
+          <image src="{{item.main_img_url}}"></image>
+        </view>
+        <view class='context'>
+          <view class='title'>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='table'>
+            <text style='border: 1px solid #4da700; color:#4da700'>单重{{item.weight}}起</text>
+            <text style='border: 1px solid #f95800; color:#f95800' wx:if="{{item.quality === '果面有伤'}}">{{item.quality}}</text>
+            <text style='border: 1px solid #bad450; color:#bad450' wx:if="{{item.color === '绿肉'}}" >{{item.color}}</text>
+            <text style='border: 1px solid #f95800; color:#f95800' wx:if="{{item.quality != '果面有伤'}}">{{item.quality}}</text>
+            <text style='border: 1px solid #bad450; color:#red' wx:if="{{item.color === '红肉'}}">{{item.color}}</text>
+          </view>
+          <view class='price-add'>
+            <view class='price'>￥{{item.price}}</view>
+            <view class='add'>查看详情</view>
+          </view>
+        </view>
+      </view>
+      <view class='line'>
+        <view></view>
+      </view>
+    </block>
+  </view>
+</template>

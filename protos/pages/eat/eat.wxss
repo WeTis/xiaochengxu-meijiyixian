@@ -1,0 +1,46 @@
+/* pages/eat.wxss */
+.container{
+  width: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+  /* background-color: #eee; */
+}
+.maintitle{
+  line-height: 80rpx;
+  font-size: 40rpx;
+}
+.author{
+  font-size: 32rpx;
+  color: #666;
+}
+.content{
+  font-size: 32rpx;
+  color: #333;
+}
+.paragraph{
+  text-indent: 60rpx;
+  margin: 20rpx 0;
+  line-height: 60rpx;
+}
+.bigTitle{
+  font-size: 44rpx;
+  line-height: 100rpx;
+  width: 100rpx;
+  margin: 20rpx auto;
+  background-color: #bad450;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.title{
+  line-height: 80rpx;
+  font-size: 40rpx;
+  color: rgb(0, 255, 76);
+}
+.text{
+  line-height: 60rpx;
+}
+
+.list text{
+  display: block;
+}

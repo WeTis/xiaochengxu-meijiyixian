@@ -1,0 +1,14 @@
+<template name='category-product'>
+   <view class='product-list'>
+      <block wx:for="{{productList}}">
+        <view class='product'>
+             <view class='product-image'>
+                <image src="{{item.main_img_url}}"></image>
+             </view>
+             <view class='product-name'>
+             {{item.name}}
+             </view>
+        </view>
+      </block>
+   </view>
+</template>

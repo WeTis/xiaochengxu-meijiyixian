@@ -1,0 +1,96 @@
+<view class="container detail-container" hidden="{{!loadingHidden}}">
+    <view class="detail-header-box">
+       
+        <view class="detail-topic-img">
+            <image src="{{product.main_img_url}}"></image>
+        </view>
+    
+        <view class="basic-info-box">
+            <view class="stock" wx:if="{{product.stock>0}}">有货</view>
+            <view class="stock no" wx:else>缺货</view>
+            <view class="name">{{product.name}}</view>
+            <view class="price">￥{{product.price}}</view>
+        </view>
+    </view>
+    <view class="detail-bottom-box">
+        <view class="tabs-box">
+            <block wx:for="{{['商品详情' ,'产品参数','售后保障']}}">
+                <view class="tabs-item {{currentTabsIndex==index?'selected':''}}" bindtap="onTabsItemTap" data-index="{{index}}">
+                    {{item}}
+                </view>
+            </block>
+        </view>
+        <view class="product-detail-box">
+            <view class="product-detail-imgs" hidden="{{currentTabsIndex!=0}}">
+                <block wx:for="{{product.imgs}}">
+                    <image src="{{item.img_url.url}}" ></image>
+                </block>
+            </view>
+            <view class="product-detail-properties" hidden="{{currentTabsIndex!=1}}">
+                <block wx:for="{{product.properties}}">
+                    <view class="properties-item">
+                        <view class="properties-name">{{item.name}}</view>
+                        <view class="properties-detail">{{item.detail}}</view>
+                    </view>
+                </block>
+            </view>
+            <view class="product-detail-protect" hidden="{{currentTabsIndex!=2}}">
+                <view class='smailTitle'>收货</view>
+                <view class='detailText'>为了保护您的利益，收货时请务必检查包装是否良好。如果包装有问题请不要收货，拍照联系客服。</view>
+                 <view class='detailText'>由于包装原因，在您收到快递到货通知时，请尽快取货。如果因为您长时间未取货，导致的问题，我们不支持退货。</view>
+                <view class='smailTitle'>退货</view>
+                <view class='detailText'>关于退货，由于猕猴桃属于特殊商品，所以发货后不支持退款，您可以在未发货前联系客服退款。</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='moreTool'>
+   <view class='{{ addScale ? "addMore addShow" : "addMore" }}' bindtap='addShow'>
+      <image src='../../imgs/icon/add.png'></image>
+   </view>
+   <view class='tools'>
+       <view class='{{addScale ? "hidePosition showPosition index" : "hidePosition "}}' bindtap='returnIndex'>
+         <image src='../../imgs/icon/indexProduct.png'></image>
+       </view>
+        <view class='{{addScale ? "hidePosition showPosition share" : "hidePosition "}}'>
+         <button data-name="shareBtn" open-type="share"></button>
+         <image src='../../imgs/icon/shareProduct.png' style='width:45px;height:45px;'></image>
+       </view>
+        <view class='{{addScale ? "hidePosition showPosition customer" : "hidePosition "}}'>
+         <button open-type="contact"  class='kefu'/>
+         <image src="../../imgs/icon/customerProduct.png"></image>
+       </view>
+   </view>
+</view>
+<!-- 底部购买 -->
+<view class='bottomFixed'>
+   <view class='kefu'>
+     <button open-type="contact"  class='kefu'/>
+     <image src="../../imgs/icon/kefu.png"></image>
+     <view>客服</view>
+   </view>
+   <view class='share'>
+     
+     <button data-name="shareBtn" open-type="share"></button>
+    <image src='../../imgs/icon/share.png'></image>
+    <view>分享</view>
+   </view>
+   <view class='buyCar' bindtap="onCartTap">
+     <image src="../../imgs/icon/cart.png"></image>   
+     <view>购物车</view>  
+   </view>
+   <view class='numproduct'>
+      <picker class="{{product.stock==0?'disabled':''}}" bindchange="bindPickerChange" value="{{index}}" range="{{countsArray}}">
+           
+                    <view>
+                        <text class="counts-tips">选择数量</text>
+                        <text class="counts-data">{{productCounts}}</text>
+                      
+                    </view>
+                </picker>
+   </view>
+   <view class='addcar' bindtap="onAddingToCartTap" >加入购物车</view>
+</view>
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>

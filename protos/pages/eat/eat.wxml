@@ -1,0 +1,83 @@
+<view class='container'>
+  <view class='maintitle'>教你如何吃猕猴桃</view>
+  <view class='author'>作者：官方</view>
+  
+   <view class='content'>
+       <view class='paragraph'>
+          当我们收到一箱猕猴桃时，迫不及待的打开箱子，想尝尝其美味时，却是一脸懵比，这货应该怎么吃？直接洗了像吃苹果一样吃？还是要去皮吃？或者是这东西现在能吃吗？
+       </view>
+       <image src='https://www.witim.cn/wximg/eat1.jpg'></image>
+       <view class='paragraph'>
+       通常我们买的猕猴桃，收到的时候都是硬的，因为运输的原因不能直接将已经变软的猕猴桃快递，所以导致两种现象出现，一种是没有等到猕猴桃变软直接在硬的情况下吃完了猕猴桃，猕猴桃在软硬不同状态下的味道是不相同，会导致有的人吃了不同状态下的猕猴桃，因此对猕猴桃的评价不一样。另一种是直接等到猕猴桃变软再吃，由于收到猕猴桃是同时间采摘的，所以在相同的环境下变软几乎是差不多的时间，就会导致好多人抱怨来不及吃就坏了。
+       </view>
+
+       <view class='paragraph'>
+        那么为了让大家不对猕猴桃误解以及能更好的吃到猕猴桃，我来告诉大家究竟应该怎么吃猕猴桃。
+       </view>
+
+       <view class='bigTitle'>
+         软
+       </view>
+
+        <view class=''>
+          <view class='title'>1 直接去皮</view>
+          <image src='https://www.witim.cn/wximg/eat2.jpg'></image>
+          <text class='text'>这是软猕猴桃最常见的吃法，在猕猴桃变软的情况下可以轻松的用手去掉皮，简单而且猕猴桃的味道最美味。</text>
+        </view>
+
+        <view>
+           <view class='title'>2 用勺子吃</view>
+           <image src='https://www.witim.cn/wximg/eat3.jpg'></image>
+           <text class='text'>这种吃法适合猕猴桃不是太软的状态下，用一把水果刀，把猕猴桃从中间一切两半，然后用勺子沿着皮的边缘，轻挖果肉来吃。</text>
+        </view>
+
+        <view class='bigTitle'>
+         硬
+       </view>
+        <view>
+           <view class='title'>1 切片吃</view>
+           <image src='https://www.witim.cn/wximg/eat4.jpg'></image>
+           <text class='text'> 可以像削苹果一样去掉猕猴桃的皮 然后切成自己喜欢的形状来吃，这种吃起来页方便，而且不用等到猕猴桃变软就可以食用，味道中带有酸甜味。            </text>
+           <view class='titleM'>当然也有更秀的切片方法（技术好的可以试试）</view>
+           <view class='list'>
+             <text>①用小刀将猕猴桃两头切掉。</text>
+             <text>②将小号的水果刀自果皮边缘扎入。</text>
+             <text>③轻轻转动果皮刀，沿着果皮边缘，将果肉和果皮切分离。</text>
+             <text>④将猕猴桃竖着放在盘内，将果皮轻轻拉出。</text>
+             <text>⑤在用刀子均分成小块，用水果叉或着牙签叉着吃就可以了。</text>             
+           </view>
+        </view>
+
+        <view>
+          <view class='title'> 2 果盘</view>
+          <image src='https://www.witim.cn/wximg/eat5.jpg'></image>
+          <text class='text'>这种也是非常简单，将猕猴桃切成自己喜欢的样子和自己喜欢的水果一起吃</text>
+        </view>
+
+        <view>
+           <view class='title'>3 猕猴桃冰沙</view>
+           <image src='https://www.witim.cn/wximg/eat6.jpg'></image>
+           <text class='text'>猕猴桃3个、牛奶1袋、白砂糖适量。</text>
+           
+           <view class='list'>
+            <text>1、猕猴桃去皮。</text>
+            <text>2、将猕猴桃放入海尔搅拌机中，倒入牛奶，放入白砂糖，搅打成果泥。</text>
+            <text>3、将其倒入保鲜盒中，冷冻。</text>
+            <text>4、倒出，切块，即可食用。如果想吃细腻口感，就再次放入料理机中，搅打均匀即可。</text>
+            <text>5、如果喜欢有果肉的口感，可以少搅打几下，只将水果稍打碎即可。</text>
+            <text>6、冷冻过程，水分会析出，冷冻成冰渣，如果想吃细腻口感，可以再次搅打成果泥。</text>
+           </view>
+        </view>
+
+        <view>
+           <view class='title'>猕猴桃泥</view>
+           <text class='text'>猕猴桃半个、温开水适量。</text>
+           <view class='list'>
+            <text>1、将猕猴桃洗干净，去皮，然后切成小块。</text>
+            <text>2、将猕猴桃压成泥。</text>
+            <text>3、用1:1的方式兑水，即可食用。</text>
+           </view>
+        </view>
+   </view>
+   
+</view>

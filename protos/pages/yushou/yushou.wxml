@@ -1,0 +1,8 @@
+<view class='imgBox'>
+ <block wx:for="{{product.imgs}}">
+    <image src="{{item.img_url.url}}" ></image>
+ </block>
+</view>
+<view class='xiadan' bindtap='tabProduct'>
+   立即下单
+</view>

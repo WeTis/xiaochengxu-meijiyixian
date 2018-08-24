@@ -1,0 +1,8 @@
+<view class='index'>
+       <image src='/imgs/start1.png'></image>
+
+   <view class='tiyan'>
+        <button open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">立即进入</button>
+   </view>
+</view>
+
